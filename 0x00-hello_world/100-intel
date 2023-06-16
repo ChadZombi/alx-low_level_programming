@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="$CFILE"; $\100-intel="${CFILE%.c}.s"; gcc -S -masm=intel "$CFILE" -o "100-intel"
+export CFILE="0-main.c"; ./100-intel
