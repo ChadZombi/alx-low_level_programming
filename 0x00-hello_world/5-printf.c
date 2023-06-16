@@ -3,7 +3,7 @@
 /**
  * main - entry point of programme
  *
- * discription- this function uses printf to print
+ * This function uses printf to print
  * "with proper grammar, but the outcome is a piece of art,"
  * followed by a new line
  *
