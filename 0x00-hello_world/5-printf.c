@@ -1,13 +1,13 @@
 #include<stdio.h>
 
 /**
- * main- entry point
+ * main - entry point of programme
  *
  * discription- this function uses printf to print
  * "with proper grammar, but the outcome is a piece of art,"
  * followed by a new line
  *
- * return- always 0 showing success
+ * return: always 0 showing success
  */
 
 int main(void)
