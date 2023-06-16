@@ -7,7 +7,7 @@
  * "with proper grammar, but the outcome is a piece of art,"
  * followed by a new line
  *
- * return: always 0 showing success
+ * Return: always 0 showing success
  */
 
 int main(void)
