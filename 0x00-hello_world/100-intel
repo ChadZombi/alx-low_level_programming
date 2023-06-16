@@ -1,5 +1,2 @@
-CFILE="0-main.c"; OUTPUT_FILE="${CFILE%.*}.s"; echo '#include <stdio.h>
-int main(void) {
-    printf("Hello, world!\n");
-    return 0;
-}' > "$CFILE"; gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
+#!/bin/bash
+CFILE="$CFILE"; CFILE="${CFILE%.c}.s"; gcc -S -masm=intel "$CFILE" -o "CFILE"
