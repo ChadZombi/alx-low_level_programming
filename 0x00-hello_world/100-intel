@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="$CFILE"; "100-intel"="${CFILE%.c}.s"; gcc -S -masm=intel "$CFILE" -o "100-intel"; export CFILE=./100-intel
+export CFILE="0-main.c" && printf '#include <stdio.h>\nint main(void) {\n    printf("Hello, world!\\n");\n    return 0;\n}' > "$CFILE" && ./100-intel
