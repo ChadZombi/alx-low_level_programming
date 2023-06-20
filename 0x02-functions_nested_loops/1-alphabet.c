@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * main - void print_alphabet(void)
- * Description: print_alphabet will print the alphabet
- * in lowercase
- * from 'a' to 'z'
+ * print_alphabet - Prints lowercase from 'a' to 'z'
+ *
+ * description: Print_alphabet prints a list of lowercase
+ * from 'a' to 'z' in order
+ *
  */
 
 void print_alphabet(void)
