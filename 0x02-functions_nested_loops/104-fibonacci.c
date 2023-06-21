@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - Entry point of the program
@@ -7,24 +8,21 @@
  */
 int main(void)
 {
-int n = 98;
-int count = 2;
-int a = 1;
-int b = 2;
+    int n = 98;
+    int count = 2;
+    double phi = (1 + sqrt(5)) / 2;
+    int fibonacci;
 
-printf("%d, %d", a, b);
+    printf("1, 2");
 
-while (count < n)
-{
-int next = a + b;
-printf(", %d", next);
+    while (count < n)
+    {
+        fibonacci = (int)round((pow(phi, count) - pow(1 - phi, count)) / sqrt(5));
+        printf(", %d", fibonacci);
+        count++;
+    }
 
-a = b;
-b = next;
-count++;
-}
+    printf("\n");
 
-printf("\n");
-
-return (0);
+    return (0);
 }
