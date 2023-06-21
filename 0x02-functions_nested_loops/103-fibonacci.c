@@ -17,17 +17,17 @@ int current = 2;
 int sum = 0;
 int next;
 
-    while (current <= limit)
-    {
-        if (current % 2 == 0)
-            sum += current;
+while (current <= limit)
+{
+if (current % 2 == 0)
+sum += current;
 
-        next = previous + current;
-        previous = current;
-        current = next;
-    }
+next = previous + current;
+previous = current;
+current = next;
+}
 
-    printf("%d\n", sum);
+printf("%d\n", sum);
 
-    return (0);
+return (0);
 }
