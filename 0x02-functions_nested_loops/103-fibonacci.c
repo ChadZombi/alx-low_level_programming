@@ -11,11 +11,11 @@
 
 int main(void)
 {
-    int limit = 4000000;
-    int previous = 1;
-    int current = 2;
-    int sum = 0;
-    int next;
+int limit = 4000000;
+int previous = 1;
+int current = 2;
+int sum = 0;
+int next;
 
     while (current <= limit)
     {
@@ -29,5 +29,5 @@ int main(void)
 
     printf("%d\n", sum);
 
-    return 0;
+    return (0);
 }
