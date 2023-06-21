@@ -8,24 +8,26 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
     int limit = 4000000;
     int previous = 1;
     int current = 2;
     int sum = 0;
+    int next;
 
     while (current <= limit)
     {
         if (current % 2 == 0)
             sum += current;
 
-        int next = previous + current;
+        next = previous + current;
         previous = current;
         current = next;
     }
 
     printf("%d\n", sum);
 
-    return (0);
+    return 0;
 }
