@@ -1,25 +1,30 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  * main - Entry point of the program
+ *
+ * Description: Prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2.
+ * The numbers are separated by commas and spaces.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int n = 98;
-    int count = 2;
-    double phi = (1 + sqrt(5)) / 2;
-    int fibonacci;
+    unsigned long long int previous = 0;
+    unsigned long long int current = 1;
+    unsigned long long int next;
+    int count;
 
-    printf("1, 2");
+    printf("%llu, %llu", current, current);
 
-    while (count < n)
+    for (count = 3; count <= 98; count++)
     {
-        fibonacci = (int)round((pow(phi, count) - pow(1 - phi, count)) / sqrt(5));
-        printf(", %d", fibonacci);
-        count++;
+        next = previous + current;
+        printf(", %llu", next);
+
+        previous = current;
+        current = next;
     }
 
     printf("\n");
