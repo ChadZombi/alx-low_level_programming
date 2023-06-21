@@ -11,24 +11,24 @@
 
 int main(void)
 {
-    int n = 50;
-    unsigned long a = 1;
-    unsigned long b = 2;
-    unsigned long next;
-    int i;
+int n = 50;
+unsigned long a = 1;
+unsigned long b = 2;
+unsigned long next;
+int i;
 
-    printf("%lu, %lu", a, b);
+printf("%lu, %lu", a, b);
 
-    for (i = 3; i <= n; i++)
-    {
-        next = a + b;
-        printf(", %lu", next);
+for (i = 3; i <= n; i++)
+{
+next = a + b;
+printf(", %lu", next);
 
-        a = b;
-        b = next;
-    }
+a = b;
+b = next;
+}
 
-    printf("\n");
+printf("\n");
 
-    return (0);
+return (0);
 }
