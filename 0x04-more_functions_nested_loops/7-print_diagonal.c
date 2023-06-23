@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints a diagonal line using the \
- * @n: input variable
+ * print_diagonal - prints a diagonal line using _putchar
+ * @n: input value for variable
+ *
  * Return: void
  */
 
