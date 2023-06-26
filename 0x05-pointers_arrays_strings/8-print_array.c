@@ -4,7 +4,7 @@
 /**
  * print_array - function that prints n elements of an array of integers.
  * followed by a new line.
- * @a: this is the input 
+ * @a: this is the input
  * @n: this is the length of the array
  */
 
