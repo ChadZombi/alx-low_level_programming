@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * reset_to_98 - checks code
+ * reset_to_98 - updated the value of a variable to 98
+ * @n: is the pointer
+ *
  * Return: always 0
  */
 
-void UpdatedValue ( int *Upv )
+void reset_to_98(int *n)
 {
-*Upv = 98;
+*n = 98;
 }
