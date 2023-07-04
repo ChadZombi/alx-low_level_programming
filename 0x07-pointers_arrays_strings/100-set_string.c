@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * set_string - Sets the value of a pointer to a char.
  * Description: This function takes a pointer to a pointer to a char (s) and
@@ -12,17 +11,11 @@ void set_string(char **s, char *to)
 {
 *s = to;
 }
-
-/**
- * main - Entry point of the program.
- *
- * Return: Always 0.
- */
 int main(void)
 {
 char *s = NULL;
 char to[] = "Hello, world!";
 set_string(&s, to);
-printf("%s\n", s);
+_putchar("%s\n", s);
 return (0);
 }
