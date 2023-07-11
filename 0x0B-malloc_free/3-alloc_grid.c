@@ -17,7 +17,7 @@ return (NULL);
 }
 else
 {
-p = (int **) malloc(width * sizeof(int *));
+p = (int **) malloc(height * sizeof(int *));
 if (!p)
 {
 free(p);
